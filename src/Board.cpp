@@ -13,11 +13,11 @@ Board::Board() {
 }
 
 
-void Board::printBoard () const  {
+void Board::printBoard() const {
     std::cout << "-------------" << std::endl;
-    for (int i = 0; i < board.size(); ++i) {
-        for (int j = 0; j < board[i].size(); ++j) {
-            std::cout << "| " << board[i][j] << " ";
+    for (const auto &i: board) {
+        for (char j: i) {
+            std::cout << "| " << j << " ";
         }
         std::cout << "|" << std::endl;
         std::cout << "-------------" << std::endl;

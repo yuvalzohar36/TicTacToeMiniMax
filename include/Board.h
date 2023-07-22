@@ -13,10 +13,10 @@ class Board{
 public:
     Board();
     vector<vector<char>>& getBoard(){return board;}
-    bool isBoardFull(vector<vector<char>> currentBoard);
+    static bool isBoardFull(vector<vector<char>> currentBoard);
     void printBoard() const;
     bool isEmptyCell(int row, int col, char mark = ' ');
-    vector<vector<char>> initBoard(char emptyMark = ' ');
+    static vector<vector<char>> initBoard(char emptyMark = ' ');
 private:
     vector<vector<char>> board;
 

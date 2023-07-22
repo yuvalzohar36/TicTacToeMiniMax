@@ -12,9 +12,9 @@
 class TicTacToe {
 public:
     TicTacToe();
-    void computerTurn(Board& board);
+    static void computerTurn(Board& board, int row, int col);
     char checkWinner(Board &board, vector<vector<char>>& currentBoard);
-    void userTurn(Board& board);
+    static void userTurn(Board& board);
     bool getUserTurn() const{return isUserTurn;}
     void setUserTurn(bool value){isUserTurn = value;}
 
